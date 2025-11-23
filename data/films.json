@@ -1,0 +1,168 @@
+[
+    {
+      "id": 1,
+      "imagen": "https://i.pinimg.com/736x/b7/6c/8c/b76c8c1a165c057609773fe5f350344b.jpg",
+      "titulo": "El padrino",
+      "genero": "Drama",
+      "año": 1972,
+      "director": "Francis Ford Coppola",
+      "estado": "excelente",
+      "soporte": "Blu-ray",
+      "descripcion": "La historia épica de una familia mafiosa en Nueva York durante los años 40."
+    },
+    {
+      "id": 2,
+      "imagen": "https://www.mubis.es/media/covers/5865/76466/cadena-perpetua-edicion-definitiva-original.jpg",
+      "titulo": "Cadena perpetua",
+      "genero": "Drama",
+      "año": 1994,
+      "director": "Frank Darabont",
+      "estado": "bueno",
+      "soporte": "DVD",
+      "descripcion": "Un banquero es condenado injustamente y forja una amistad transformadora en prisión."
+    },
+    {
+      "id": 3,
+      "imagen": "https://m.media-amazon.com/images/M/MV5BNGE1YzI4NzMtZTUxNi00Y2I5LTg2MmQtODE0NThmYTFmMDk0XkEyXkFqcGc@._V1_.jpg",
+      "titulo": "Matrix",
+      "genero": "Ciencia Ficción",
+      "año": 1999,
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "estado": "bueno",
+      "soporte": "DVD",
+      "descripcion": "Un joven descubre que la realidad es una simulación y combate un sistema de control virtual."
+    },
+    {
+      "id": 4,
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Citizen_Kane_poster%2C_1941_%28Style_B%2C_unrestored%29.jpg",
+      "titulo": "Ciudadano Kane",
+      "genero": "Drama",
+      "año": 1941,
+      "director": "Orson Welles",
+      "estado": "excelente",
+      "soporte": "VHS",
+      "descripcion": "El misterioso legado de un magnate de la prensa se explora tras su muerte."
+    },
+    {
+      "id": 5,
+      "imagen": "https://m.media-amazon.com/images/I/71FIao4X5PL._AC_UF1000,1000_QL80_.jpg",
+      "titulo": "Titanic",
+      "genero": "Romance",
+      "año": 1997,
+      "director": "James Cameron",
+      "estado": "malo",
+      "soporte": "DVD",
+      "descripcion": "Una historia de amor se desarrolla en medio del trágico hundimiento del Titanic."
+    },
+    {
+      "id": 6,
+      "imagen": "https://www.covercaratulas.com/ode/mini/carteles-20298.jpg",
+      "titulo": "El club de la lucha",
+      "genero": "Thriller",
+      "año": 1999,
+      "director": "David Fincher",
+      "estado": "bueno",
+      "soporte": "Blu-ray",
+      "descripcion": "Un hombre desilusionado forma un club secreto de peleas que se convierte en un movimiento anárquico."
+    },
+    {
+      "id": 7,
+      "imagen": "https://www.mubis.es/media/covers/2445/5429/blade-runner-montaje-final-edicion-especial-portada-l_cover.jpg",
+      "titulo": "Blade Runner",
+      "genero": "Ciencia Ficción",
+      "año": 1982,
+      "director": "Ridley Scott",
+      "estado": "excelente",
+      "soporte": "Blu-ray",
+      "descripcion": "En un futuro distópico, un cazador de replicantes busca fugitivos sintéticos en Los Ángeles."
+    },
+    {
+      "id": 8,
+      "imagen": "https://www.tuposter.com/pub/media/catalog/product/cache/71d04d62b2100522587d43c930e8a36b/f/i/file_41_67.jpg",
+      "titulo": "Pulp Fiction",
+      "genero": "Crimen",
+      "año": 1994,
+      "director": "Quentin Tarantino",
+      "estado": "bueno",
+      "soporte": "DVD",
+      "descripcion": "Historias entrelazadas de criminales y antihéroes en Los Ángeles, contadas con narrativa no lineal."
+    },
+    {
+      "id": 9,
+      "imagen": "https://www.posterscine.com/media/catalog/product/cache/1c91d037a1f0ef180108abb0973795cc/e/l/el_resplandor_1980_poster.png",
+      "titulo": "El resplandor",
+      "genero": "Terror",
+      "año": 1980,
+      "director": "Stanley Kubrick",
+      "estado": "malo",
+      "soporte": "VHS",
+      "descripcion": "Un escritor aislado con su familia en un hotel desierto se ve envuelto en sucesos siniestros."
+    },
+    {
+      "id": 10,
+      "imagen": "https://www.mubis.es/media/covers/1696/2649/forrest-gump-portada-original.jpg",
+      "titulo": "Forrest Gump",
+      "genero": "Comedia dramática",
+      "año": 1994,
+      "director": "Robert Zemeckis",
+      "estado": "excelente",
+      "soporte": "Blu-ray",
+      "descripcion": "La vida extraordinaria de Forrest Gump a través de eventos históricos estadounidenses."
+    },
+    {
+      "id": 11,
+      "imagen": "https://i.pinimg.com/736x/5f/b1/2b/5fb12b3ee0399c4881f9739e73647022.jpg",
+      "titulo": "Jurassic Park",
+      "genero": "Aventura",
+      "año": 1993,
+      "director": "Steven Spielberg",
+      "estado": "bueno",
+      "soporte": "DVD",
+      "descripcion": "Un parque temático de dinosaurios clonados se convierte en escenario de caos y terror."
+    },
+    {
+      "id": 12,
+      "imagen": "https://madakiba.com/files/product_images/2023/03/14/poster-star-wars-una-nueva-esperanza-61cm-x-91-5cm-51-KRjovVc1Qa.jpg",
+      "titulo": "Star Wars: Una Nueva Esperanza",
+      "genero": "Ciencia Ficción",
+      "año": 1977,
+      "director": "George Lucas",
+      "estado": "excelente",
+      "soporte": "DVD",
+      "descripcion": "El joven Luke Skywalker se une a la rebelión para combatir el Imperio Galáctico y salvar la galaxia."
+    },
+    {
+      "id": 13,
+      "imagen": "https://www.mubis.es/media/articles/2319/22848/diseno-de-la-caratula-de-los-vengadores-en-blu-ray-xl.jpg",
+      "titulo": "Los Vengadores",
+      "genero": "Acción",
+      "año": 2012,
+      "director": "Joss Whedon",
+      "estado": "bueno",
+      "soporte": "Blu-ray",
+      "descripcion": "Los superhéroes más poderosos del mundo se unen para salvar la Tierra de una amenaza extraterrestre."
+    },
+    {
+      "id": 14,
+      "imagen": "https://media.posterlounge.com/img/products/710000/705433/705433_poster.jpg",
+      "titulo": "Terminator 2: El juicio final",
+      "genero": "Acción",
+      "año": 1991,
+      "director": "James Cameron",
+      "estado": "excelente",
+      "soporte": "VHS",
+      "descripcion": "Un cyborg regresa del futuro para proteger a un adolescente clave en la lucha contra las máquinas."
+    },
+    {
+      "id": 15,
+      "imagen": "https://www.mubis.es/media/releases/373/164/la-vida-es-bella-blu-ray-original.jpg",
+      "titulo": "La vida es bella",
+      "genero": "Drama",
+      "año": 1997,
+      "director": "Roberto Benigni",
+      "estado": "bueno",
+      "soporte": "DVD",
+      "descripcion": "Un padre utiliza la imaginación para proteger a su hijo de los horrores de un campo de concentración."
+    }
+  ]
+  

@@ -1,0 +1,235 @@
+/*Estilos base compartidos para logo*/
+img.logo {
+    width: 250px;
+    height: 64px;
+}
+
+/*Barra de navegacion superior*/
+#navBar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background-color: var(--surface-primary);
+    padding: 0.5rem 1.25rem;
+    position:fixed;
+    top:0;
+    left: 0;
+    right:0;
+    z-index: 999;
+    
+    > a {
+        grid-column: 1;
+    }
+
+    ul.navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        grid-column: 2;
+
+        li {
+            padding: 0 0.5rem;
+            
+            a {
+                display: block;
+                padding: 1rem 2rem;
+                text-decoration: none;
+                color: var(--text-secondary);
+                transition: color 0.4s ease, background-color 1s ease;
+                font-size: var(--font-size-t8);
+                position: relative;
+                border-radius: 0.5rem 0.5rem 0 0;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: 2px;
+                    background: var(--accent-primary);
+                    transition: width 0.6s ease;
+                }
+
+                &:hover {
+                    color: var(--surface-primary);
+                    background-color: var(--text-secondary);
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+
+            &:not(:last-child){
+                border-right: 2px solid var(--text-tertiary)
+            }
+
+        }
+    }
+
+    ul.btns-cta {
+        grid-column: 3;
+        justify-self: end;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+            
+}
+/*Estilo boton primario CTA*/
+.btn-primary {
+    font-size: var(--font-size-t6);
+    font-weight: bold;
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+    text-shadow: 1px 1px 5px var(--text-primary);
+    max-width: 250px;
+    text-decoration: none;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    
+
+    &:hover {
+        box-shadow: 0 4px 12px var(--accent-secondary);
+    }
+}
+/*Estilo boton secundario CTA*/
+.btn-secondary {
+    font-size: var(--font-size-t6);
+    font-weight: bold;
+    color: var(--accent-secondary);
+    border: solid 2px;
+    min-width: 250px;
+    text-decoration: none;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    border-radius: 0.5rem;
+    border-color: var(--accent-secondary);
+    text-align: center;
+   
+    &:hover {
+        box-shadow: 0 4px 12px var(--accent-primary);
+    }
+}
+/*Estilo tarjeta de peliculas*/
+.filmCards {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    width: 300px;
+    height: 420px;
+    padding: 1rem;
+    background-color: var(--surface-primary);
+    gap:0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px var(--accent-secondary);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    
+
+    div.caratula {
+        display: flex;
+        height: 90%;
+        min-height: 0;
+        width: 100%;
+        overflow: hidden;
+
+        >img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+    }
+
+    h3 {
+        color:var(--text-primary);
+        font-size: var(--font-size-t4);
+        margin: 0;
+
+    }
+    
+
+    &:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0 12px 24px rgba(123, 75, 255, 0.4), 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+}
+/*Estilo footer*/
+#footer {
+    padding: 0.5rem 2rem;
+    margin-top: 4rem;
+    background-color: var(--surface-primary);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "logo links socials"
+        "copy copy copy";
+
+    div.footer-logo{grid-area: logo}
+    div.footer-links{grid-area:links}
+    div.footer-socials{grid-area: socials}
+    div.footer-copyright{grid-area: copy}
+
+    ul.footer-navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+        list-style: none;
+        padding: 0;
+        margin:0;
+
+        li {
+            padding: 0 0.5rem;
+
+            a{
+                color: var(--text-secondary);
+                text-decoration: none;
+                display: block;
+                padding: 1rem;
+                font-size: var(--font-size-t8);
+            }
+
+            &:not(:last-child){
+                border-right: 2px solid var(--text-tertiary);
+            }
+        }
+    }
+
+    div.footer-socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: end;
+        gap:1rem;
+        padding:0;
+        margin:0;
+
+        img {
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            box-shadow: 0px 1px 5px var(--accent-tertiary);
+        }
+    }
+
+    div.footer-copyright {
+        text-align: center;
+        color: var(--text-tertiary);
+        border-top: 1px solid var(--text-tertiary);
+        margin: 1rem 0;
+    }
+
+}

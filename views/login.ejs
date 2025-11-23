@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login-MiCineteca</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pagina de login. Mi cineteca">
+        <meta name="author" content="Javier Cabrera">
+        <meta name="keywords" content="cine, cinefilo, bilioteca, social-media, peliculas, films, descubre, actores">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="stylesheet" href="/stylesheets/login.css">
+    </head>
+<body>
+    <header>
+        <%- include("partials/navBar") %>
+    </header>
+    <main>
+        <section id="login">
+            <h1>Iniciar Sesión</h1>
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" name="mail" id="mail" placeholder="user1234@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Constraseña:</label>
+                    <input type="password" name="password" id="password" placeholder="********">
+                </div>
+
+                <a href="#">¿Olvidaste tu contraseña?</a>
+
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+
+            <footer>
+                <p>Inicia sesión con:</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/">
+                        <img src="/images/facebook.png" alt="social-facebook">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="/images/social.png" alt="social-instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img src="/images/linkedin.png" alt="social-linkedin">
+                    </a>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <%- include("partials/footer") %>
+</body>
+</html>

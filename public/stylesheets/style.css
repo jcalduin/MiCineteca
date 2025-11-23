@@ -1,0 +1,102 @@
+@import "normalize.css";
+@import "components.css";
+@import "theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: var(--primary-background);
+}
+
+main {
+    margin: 0 5rem;
+}
+
+.hero {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    height: 100vh;
+
+    .hero-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 1rem;
+        flex: 1.2;
+        max-width: 900px;
+        gap: 2rem;
+        
+
+        h1 {
+            font-size: var(--font-size-t1);
+            color: var(--text-primary);
+            font-weight: bold;
+        }
+
+        p {
+            font-size: var(--font-size-t3);
+            color: var(--text-secondary);
+            font-weight:400;
+        }
+
+        .hero-btns {
+            display:flex;
+            justify-content: center;
+            align-items:stretch;
+            gap: 1rem;
+        }
+    }
+
+    .hero-right {
+        flex:0.8;
+        position: relative;
+        max-height: 500px;
+        width:100%;
+
+        img{
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top:0; left:0;
+            width:100%;
+            height:100%;
+            background-color: rgba(65, 39, 14, 0.623);
+            pointer-events: none;
+        }
+    }
+}
+
+.filmList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: var(--font-size-t2);
+        color: var(--text-primary);
+        font-weight:500;
+    }
+
+    .inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        width: 100%;
+        justify-items: center;
+        align-items:start;
+        margin-top: 1.5rem;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

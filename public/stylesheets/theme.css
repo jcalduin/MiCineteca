@@ -1,0 +1,28 @@
+:root{
+    /*fondo principal y fondo de componentes*/
+    --primary-background: #1a1a1a;
+    --surface-primary: #2D2D2D;
+    --surface-secondary: #404040;
+
+    /*colores de acento*/
+    --accent-primary: #FF8A00;
+    --accent-secondary: #7B4BFF;
+    --accent-tertiary: #00D4C8;
+
+    /*colores del texto*/
+    --text-primary:#FFFFFF;
+    --text-secondary: #E0E0E0;
+    --text-tertiary: #808080;
+
+    /*Tipografía*/
+    --font-family-base: 'Montserrat', sans-serif;
+    --font-size-base: 16px;
+    --font-size-t1: 4rem;
+    --font-size-t2: 2.5rem;
+    --font-size-t3: 2.25rem;
+    --font-size-t4: 2rem;
+    --font-size-t5: 1.875rem;
+    --font-size-t6: 1.75rem;
+    --font-size-t7: 1.5rem;
+    --font-size-t8: 1.25rem;
+}
