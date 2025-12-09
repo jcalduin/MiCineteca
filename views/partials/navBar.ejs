@@ -7,12 +7,22 @@
       
     <ul class="navigation">
         <li><a href="/">Inicio</a></li>
-        <li><a href="#">Colección</a></li>
-        <li><a href="#">Explorar</a></li>
+        <li><a href="/myCollection">Colección</a></li>
+        <li><a href="/#list">Explorar</a></li>
         <li><a href="/contact">Soporte</a></li>
     </ul>
+
     <ul class="btns-cta">
-        <li><a class="btn-primary" href="#">Registrate</a></li>
-        <li><a class="btn-secondary" href="/login">Inicio Sesión</a></li>
+        <% if (isLoggedIn) { %>
+
+            <li><a href="/myCollection" class="userLogged"><%= userMail %><i class="fi fi-br-user-check"></i></a></li>
+            <li><a class="btn-logout" href="/logout"><i class="fi fi-ss-exit"></i>Salir</a></li>
+
+        <% } else { %> 
+
+            <li><a class="btn-primary" href="#">Registrate</a></li>
+            <li><a class="btn-secondary" href="/login">Inicio Sesión</a></li>
+
+        <% } %>
     </ul>
 </nav>

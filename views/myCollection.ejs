@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Collection - Mi Cineteca</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Organiza, explora y ordena tus películas.">
+        <meta name="author" content="Javier Cabrera">
+        <meta name="keywords" content="cine, cinefilo, bilioteca, social-media, peliculas, films, descubre, actores">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="stylesheet" href="/stylesheets/myCollection.css">
+    </head>
+<body>
+    
+    <header>
+        <%- include("partials/navBar") %>
+    </header>
+
+    <main>
+        <section class="myCopies">
+
+            <h1>Mis Copias</h1>
+            <p>Consulta y gestiona tu colección personal de películas</p>
+
+            <div class="filtros">
+
+                <form id="filtrosForm" action="/filtrar" method="GET">
+                    <input type="text" name="nombre" id="buscador" placeholder="Buscar en mi colección...">
+
+                    <input type="text" name="support" id="support" list="supportList" placeholder="Soporte...">
+                    <datalist id="supportList">
+                        <option value="DVD">
+                        <option value="Blu-Ray">
+                        <option value="VHS">
+                    </datalist>
+
+                    <input type="text" name="status" id="status" list="statusList" placeholder="Estado...">
+                    <datalist id="statusList">
+                        <option value="Excelente">
+                        <option value="Bueno">
+                        <option value="Mal estado">
+                    </datalist>
+
+                    <button type="submit" class="btn-secondary">Filtrar</button>
+                </form>
+                
+                <a href="" class="btn-primary">Añadir a la colección</a>
+
+            </div>
+
+            <div class="inner">
+                <% films.forEach(pelicula => { %>
+                    <a href="/film/<%= pelicula.id %>">
+                        <%- include("partials/filmCards",{peli : pelicula }) %>  
+                    </a>
+                <% }); %> 
+            </div>
+
+        </section>
+        
+    </main>
+
+    <%- include("partials/footer") %>
+
+</body>
+</html>

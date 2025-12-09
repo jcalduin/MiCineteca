@@ -1,0 +1,34 @@
+[
+  {
+    "userId": 1, 
+    "usermail": "user1@example.com",
+    "password": "user1",
+    "copias": [
+      { "id_pelicula": 3, "estado": "bueno", "formato": "Digital" },
+      { "id_pelicula": 5, "estado": "malo", "formato": "DVD" },
+      { "id_pelicula": 7, "estado": "excelente", "formato": "Blu-ray" },
+      { "id_pelicula": 8, "estado": "bueno", "formato": "Blu-ray" }
+    ]
+  },
+  {
+    "userId": 2, 
+    "usermail": "user2@example.com",
+    "password": "user2",
+    "copias": [
+      { "id_pelicula": 1, "estado": "excelente", "formato": "Blu-ray" },
+      { "id_pelicula": 4, "estado": "bueno", "formato": "VHS" },
+      { "id_pelicula": 10, "estado": "excelente", "formato": "Blu-ray" }
+    ]
+  },
+  {
+    "userId": 3, 
+    "usermail": "admin@mexample.com",
+    "password": "admin",
+    "copias": [
+      { "id_pelicula": 2, "estado": "bueno", "formato": "DVD" },
+      { "id_pelicula": 6, "estado": "excelente", "formato": "Blu-ray" },
+      { "id_pelicula": 11, "estado": "bueno", "formato": "DVD" },
+      { "id_pelicula": 14, "estado": "malo", "formato": "VHS" }
+    ]
+  }
+]

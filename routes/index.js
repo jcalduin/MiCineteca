@@ -13,10 +13,31 @@ router.get('/contact',function(req,res,next){
     res.render('contact')
 });
 
-/*Ruta página login*/
-router.get('/login',function(req,res,next){
-    res.render('login')
-})
+/*Ruta para detalle de películas*/
+router.get('/film/:id', function(req, res, next) {
+    const filmId = req.params.id
+    let filmDetails;
+
+    const userId = req.session.userId
+    
+
+    if(!req.session.isLogged){
+        
+        filmDetails = dataService.findFilmById(filmId)
+
+    } else {
+
+        filmDetails = dataService.findFilmDetailsForUser(filmId, userId)
+
+        if (!filmDetails){
+            filmDetails = dataService.findFilmById(filmId)
+        }
+        
+    }
+
+    res.render('filmDetails', { film: filmDetails, isLogged: req.session.isLogged});
+
+});
 
 
 module.exports = router;

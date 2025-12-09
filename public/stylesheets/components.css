@@ -79,13 +79,14 @@ img.logo {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 1rem;
+        gap: 1.2rem;
         list-style: none;
         padding: 0;
         margin: 0;
     }
             
 }
+
 /*Estilo boton primario CTA*/
 .btn-primary {
     font-size: var(--font-size-t6);
@@ -104,23 +105,50 @@ img.logo {
         box-shadow: 0 4px 12px var(--accent-secondary);
     }
 }
+
 /*Estilo boton secundario CTA*/
 .btn-secondary {
     font-size: var(--font-size-t6);
     font-weight: bold;
     color: var(--accent-secondary);
     border: solid 2px;
-    min-width: 250px;
+    max-width: 250px;
     text-decoration: none;
     padding: 0.75rem 2rem 0.75rem 2rem;
     border-radius: 0.5rem;
     border-color: var(--accent-secondary);
     text-align: center;
+    background-color: transparent;
+    cursor: pointer;
    
     &:hover {
         box-shadow: 0 4px 12px var(--accent-primary);
     }
 }
+
+/*Estilo userLogin*/
+.userLogged {
+    font-size: var(--font-size-t6);
+    font-weight: bold;
+    color: var(--accent-primary);
+    display: inline-flex;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+/*estilo boton logout*/
+.btn-logout{
+    font-size: var(--font-size-t6);
+    color: var(--text-secondary);
+    display: inline-flex;
+    gap: 0.5rem;
+    text-decoration: none;
+
+    i{
+        color: var(--text-tertiary);
+    }
+}
+
 /*Estilo tarjeta de peliculas*/
 .filmCards {
     display: flex;
@@ -165,6 +193,7 @@ img.logo {
         box-shadow: 0 12px 24px rgba(123, 75, 255, 0.4), 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 }
+
 /*Estilo footer*/
 #footer {
     padding: 0.5rem 2rem;
@@ -172,7 +201,7 @@ img.logo {
     background-color: var(--surface-primary);
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
         "logo links socials"
         "copy copy copy";
@@ -232,4 +261,19 @@ img.logo {
         margin: 1rem 0;
     }
 
+}
+
+/*Estilo grid para mostrar peliculas*/
+.inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+    align-items:start;
+    margin-top: 1.5rem;
+
+    a {
+        text-decoration: none;
+    }
 }

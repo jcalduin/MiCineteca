@@ -3,6 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
+
+var authLocals = require('./middleware/authLocals')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -19,8 +22,19 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//configuracion del middleware de sesiones
+app.use(session({ //a cada peticion del servidor usa esta funcion // session: para poder guardar datos de usuario haciendo req.session.userId=...
+  secret : 'clave-secreta-cambiar-mas-adelante', //para firmar criptograficamente el ID de sesion
+  resave: false, //siginifica que no se guarde la sesion si no ha habido cambios
+  saveUninitialized: false, //significa que no se guarde una sesion vacia
+  cookie: {maxAge : 1000*60*60*24} //tiempo de vida de la cookie en milisegundos (aqui 1 dia)
+}))
+
+app.use(authLocals) // 🔑 Conexión del Middleware de Variables Locales (DEBE ir después de 'session')
+
+//redireccion rutas
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -2,9 +2,19 @@
 @import "components.css";
 @import "theme.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+
+*{
+    box-sizing: border-box;
+}
+
 
 body{
     background-color: var(--primary-background);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 main {
@@ -85,18 +95,6 @@ main {
         color: var(--text-primary);
         font-weight:500;
     }
-
-    .inner {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        width: 100%;
-        justify-items: center;
-        align-items:start;
-        margin-top: 1.5rem;
-
-        a {
-            text-decoration: none;
-        }
-    }
 }
+
+

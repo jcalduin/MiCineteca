@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Collection - Mi Cineteca</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Organiza, explora y ordena tus películas.">
+        <meta name="author" content="Javier Cabrera">
+        <meta name="keywords" content="cine, cinefilo, bilioteca, social-media, peliculas, films, descubre, actores">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="stylesheet" href="/stylesheets/filmdetails.css">
+    </head>
+<body>
+    
+    <header>
+        <%- include("partials/navBar") %>
+    </header>
+
+    <main>
+        
+        <section class="film-details">
+            
+            <h1><%= film.titulo %></h1>
+            <div class="details-container">
+                <div class="poster">
+                    <img src="<%= film.imagen %>" alt="Poster de <%= film.titulo %>">
+                </div>
+                <div class="info">
+                    <p><strong>Género:</strong> <%= film.genero %></p>
+                    <p><strong>Año:</strong> <%= film.año %></p>
+                    <p><strong>Director:</strong> <%= film.director %></p>
+                    <% if (isLogged) { %>
+                        <% if (film.estado && film.formato) { %>
+                            <p><strong>Estado:</strong> <%= film.estado %></p>
+                            <p><strong>Formato:</strong> <%= film.formato %></p>
+                        <% }%>        
+                    <% }%> 
+                    <p><strong>Descripción:</strong> <%= film.descripcion %></p>    
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <%- include("partials/footer") %>
+
+</body>
+</html>

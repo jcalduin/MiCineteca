@@ -1,0 +1,66 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.film-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    background-color: var(--surface-primary);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px var(--accent-secondary);
+
+    h1 {
+        font-size: var(--font-size-t1);
+        color: var(--text-primary);
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    .details-container{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        padding: 0 2rem 1rem 2rem;
+        
+        
+
+        .poster {
+            width: 400px;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 0.5rem;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 1rem;
+
+            p {
+                font-size: var(--font-size-t4);
+                color: var(--text-secondary);
+                margin: 0;
+            }
+
+            p strong {
+                color: var(--text-tertiary);
+                font-weight: 600;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

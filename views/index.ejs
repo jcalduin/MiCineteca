@@ -19,19 +19,19 @@
                     <h1>Tu colección de cine, siempre contigo</h1>
                     <p>Gestiona tus copias, descubre nueva películas y mantén tu cineteca organizada</p>
                     <div class="hero-btns">
-                        <a href="#" class="btn-primary">Explorar películas</a>
-                        <a href="#" class="btn-secondary">Ver mi colección</a>
+                        <a href="/#list" class="btn-primary">Explorar películas</a>
+                        <a href="/myCollection" class="btn-secondary">Ver mi colección</a>
                     </div>
                 </div>
                 <div class="hero-right">
                     <img src="images/coleccion-pelis.jpg" alt="image hero section">
                 </div>
             </section>
-            <section class="filmList">
+            <section class="filmList" id="list">
                 <h2>Últimas películas añadidas</h2>
                 <div class="inner">
                     <% films.forEach(pelicula => { %>
-                        <a href="/films/<%= pelicula.id %>">
+                        <a href="/film/<%= pelicula.id %>">
                             <%- include("partials/filmCards",{peli : pelicula }) %>  
                         </a>
                     <% }); %> 
